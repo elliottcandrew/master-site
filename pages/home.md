@@ -1,12 +1,10 @@
 ---
 layout: layouts/home.njk
-title: Home
-date: 2016-01-01T00:00:00.000Z
+# title: Home
+date: 2020-03-10
 permalink: /
 eleventyNavigation:
-  key: Home
+  key: home
   order: 0
 ---
-# Ellidot
-
 Template initial setup
