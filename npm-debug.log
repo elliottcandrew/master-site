@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ellio/.nvm/versions/node/v6.9.5/bin/node',
+1 verbose cli   '/home/ellio/.nvm/versions/node/v6.9.5/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'build' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+5 info lifecycle eleventy-netlify-boilerplate@1.0.3~prebuild: eleventy-netlify-boilerplate@1.0.3
+6 silly lifecycle eleventy-netlify-boilerplate@1.0.3~prebuild: no script for prebuild, continuing
+7 info lifecycle eleventy-netlify-boilerplate@1.0.3~build: eleventy-netlify-boilerplate@1.0.3
+8 verbose lifecycle eleventy-netlify-boilerplate@1.0.3~build: unsafe-perm in lifecycle true
+9 verbose lifecycle eleventy-netlify-boilerplate@1.0.3~build: PATH: /home/ellio/.nvm/versions/node/v6.9.5/lib/node_modules/npm/bin/node-gyp-bin:/mnt/c/dev/eleventy-netlify/node_modules/.bin:/home/ellio/.nvm/versions/node/v6.9.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Python27:/mnt/c/Python27/Scripts:/mnt/c/Program Files/ImageMagick-7.0.9-Q16:/mnt/c/ProgramData/Anaconda3:/mnt/c/ProgramData/Anaconda3/Library/mingw-w64/bin:/mnt/c/ProgramData/Anaconda3/Library/usr/bin:/mnt/c/ProgramData/Anaconda3/Library/bin:/mnt/c/ProgramData/Anaconda3/Scripts:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Calibre2:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/pc/AppData/Local/Programs/Python/Python38-32/Scripts:/mnt/c/Users/pc/AppData/Local/Programs/Python/Python38-32:/mnt/c/msys64/mingw32/bin:/mnt/c/msys64/usr/bin:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Calibre2:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/Users/pc/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/pc/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+10 verbose lifecycle eleventy-netlify-boilerplate@1.0.3~build: CWD: /mnt/c/dev/eleventy-netlify
+11 silly lifecycle eleventy-netlify-boilerplate@1.0.3~build: Args: [ '-c', 'npx eleventy' ]
+12 silly lifecycle eleventy-netlify-boilerplate@1.0.3~build: Returned: code: 1  signal: null
+13 info lifecycle eleventy-netlify-boilerplate@1.0.3~build: Failed to exec build script
+14 verbose stack Error: eleventy-netlify-boilerplate@1.0.3 build: `npx eleventy`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/home/ellio/.nvm/versions/node/v6.9.5/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/home/ellio/.nvm/versions/node/v6.9.5/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid eleventy-netlify-boilerplate@1.0.3
+16 verbose cwd /mnt/c/dev/eleventy-netlify
+17 error Linux 4.4.0-17763-Microsoft
+18 error argv "/home/ellio/.nvm/versions/node/v6.9.5/bin/node" "/home/ellio/.nvm/versions/node/v6.9.5/bin/npm" "run" "build"
+19 error node v6.9.5
+20 error npm  v3.10.10
+21 error code ELIFECYCLE
+22 error eleventy-netlify-boilerplate@1.0.3 build: `npx eleventy`
+22 error Exit status 1
+23 error Failed at the eleventy-netlify-boilerplate@1.0.3 build script 'npx eleventy'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the eleventy-netlify-boilerplate package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     npx eleventy
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs eleventy-netlify-boilerplate
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls eleventy-netlify-boilerplate
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
