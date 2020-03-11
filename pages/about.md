@@ -1,10 +1,10 @@
 ---
-# title: About us
+title: About
 date: 2020-03-10
 permalink: /about/index.html
 eleventyNavigation:
   key: about
-  order: 2
+  order: 3
 ---
 This project is adipisicing ipsum sint ex sunt. Qui nostrud incididunt labore aute minim elit ullamco in elit fugiat minim mollit. Elit exercitation nulla fugiat reprehenderit culpa irure duis.
 

@@ -50,9 +50,14 @@ module.exports = function(eleventyConfig) {
   });
 
   // only content in the `posts/` directory
-  eleventyConfig.addCollection("posts", function(collection) {
+  eleventyConfig.addCollection("logbook", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/posts\//) !== null;
+      return item.inputPath.match(/^\.\/posts\/logbook\//) !== null;
+    });
+  });
+  eleventyConfig.addCollection("research", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.inputPath.match(/^\.\/posts\/research\//) !== null;
     });
   });
 
@@ -82,16 +87,6 @@ module.exports = function(eleventyConfig) {
   let opts = {
     permalink: false
   };
-  let md = require('markdown-it')({
-    html: true,
-    linkify: true,
-    typography: true
-  }).use(require('markdown-it-video', { // <-- this use(package_name) is required
-    youtube: { width: 640, height: 390 },
-    vimeo: { width: 500, height: 281 },
-    vine: { width: 600, height: 600, embed: 'simple' },
-    prezi: { width: 550, height: 400 }
-  }));
 
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItAnchor, opts)

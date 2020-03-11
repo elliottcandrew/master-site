@@ -14,7 +14,10 @@ renderData:
   title: "Tagged “{{ tag }}”"
 ---
 
-<h1>Tagged “{{ tag }}”</h1>
+<small>Showing entries tagged as “{{ tag }}”</small>
+<br>
+<br>
+<br>
 
 {% set postslist = collections[ tag ] %}
 {% include "components/postslist.njk" %}
