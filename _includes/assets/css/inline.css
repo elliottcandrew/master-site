@@ -12,6 +12,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
+	max-width: 100vw; /* needed? */
 	/* font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; */
 	font-family: serif;
 }
@@ -25,6 +26,11 @@ body {
 
 main {
 	max-width: 37.5em;
+}
+
+img {
+	/* very hacky - FIX */
+	max-width: calc(100vw - 3em); 
 }
 
 p,

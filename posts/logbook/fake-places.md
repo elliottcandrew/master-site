@@ -4,7 +4,6 @@ date: 2020-03-11T00:00:00.000Z
 summary: "Terram in Aspectu: Phantom islands generated from satellite imagery"
 thumb: /static/img/SCR-200308_131018.png
 tags:
-  - post
   - generative
   - tech
   - environment

@@ -4,7 +4,6 @@ date: 2020-03-11T00:00:00.000Z
 summary: Reverse engineering google streetview to build 3d environments
 thumb: /static/img/gsv6.png
 tags:
-  - post
   - generative
   - tech
   - streetview
