@@ -7,4 +7,8 @@ eleventyNavigation:
   key: home
   order: 0
 ---
-Template initial setup
+This site functions as a working database of information gathered in the research phase of this project.
+
+It is very much an ongoing work in progress...
+
+Take a look around, things will grow ~
