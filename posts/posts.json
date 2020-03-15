@@ -1,5 +1,0 @@
-{
-  "layout": "layouts/post.njk",
-  "permalink": "logbook/{{ title | slug }}/index.html",
-  "tags": "post"
-}
