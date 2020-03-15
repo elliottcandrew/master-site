@@ -3,8 +3,8 @@ var gm = require('gm').subClass({imagemagick: true}),
     path = require('path'),
 
     // directories
-    inDir = path.join(__dirname, "..", "..", '_src/assets/imgs/in/'),
-    outDir = path.join(__dirname, "..", "..", '_src/assets/imgs/out/'),
+    inDir = path.join(__dirname, "..", "..", '/assets/imgs/in/'),
+    outDir = path.join(__dirname, "..", "..", '/assets/imgs/out/'),
 
     // img sizes to output (width)
     arrSizes = [500, 1000, 1500];
