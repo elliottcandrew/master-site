@@ -5,10 +5,11 @@
   "scripts": {
     "start": "concurrently \"npm run sass -- --watch\" \"npm run serve\"",
     "build": "npm run sass && npm run gm && npx eleventy",
-    "watch": "npx eleventy --watch",
-    "serve": "npx eleventy --serve",
+    "watch": "npx eleventy --watch --quiet",
+    "serve": "npx eleventy --serve --quiet",
     "debug": "DEBUG=* npx eleventy",
-    "sass": "npx sass /assets/css/main.sass /assets/css/main.css --style=compressed",
+    "sass": "npx sass assets/css/master.sass assets/css/master.css --style=compressed --trace",
+    "bsprod": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
     "gm": "node utils/js/gm.js"
   },
   "repository": {
@@ -29,12 +30,14 @@
     "@11ty/eleventy": "^0.10.0",
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.1.0",
+    "eleventy-plugin-sass": "^1.0.0",
     "fs-extra": "^8.1.0",
     "gm": "^1.23.1",
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5",
     "markdown-it-video": "^0.6.3",
+    "postcss": "^7.0.27",
     "reframe.js": "^2.2.7",
     "sass": "^1.26.3"
   },

@@ -13,7 +13,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: monospace;
-	background: #f7f7f7;
+	background: silver;
 }
 
 body {
@@ -41,12 +41,6 @@ a[href]:not(:hover) {
 	text-decoration: none;
 }
 
-header,
-main,
-footer {
-	padding: 1em;
-}
-
 main {
 	padding-bottom: 2em;
 	max-width: 37.5em;
@@ -72,21 +66,6 @@ pre {
 	hyphens: none;
 	padding: 1em;
 	margin: .5em 0;
-}
-
-/*
-grid structure
-
-body
-| header
-| main-start | main | main-end
-| footer
-*/
-
-/* header */
-
-header {
-	
 }
 
 /* Header Logo (style as h2) */
@@ -135,11 +114,6 @@ main > section > article > * {
 	margin-bottom: .5em;
 }
 
-img {
-	/* very hacky - FIX */
-	/* max-width: calc(100vw - 3em);  */
-}
-
 /* Post Tags */
 a[rel="tag"],
 a[rel="tag"]:visited {
@@ -150,57 +124,8 @@ a[rel="tag"]:visited {
   font-size: .625em;
   text-decoration: none;
 	margin: 0 .5em .5em 0;
-
-  /* REMOVE BUTTON BOXES */
-
-  /* padding: 0 .5em;
-	line-height: 2em;
-	height: 2em;
-  border: 1px solid var(--white);
-	background-color: var(--white);
-	color: var(--blue);
-  border-radius: .2em; */
-
 }
 
 a[rel="tag"]:last-child {
 	margin-right: 0;
-}
-
-/* Contact Form */
-form {
-  display: grid;
-	padding: 2em 0;
-}
-
-form label {
-  display: none;
-}
-
-input,
-textarea,
-button {
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
-}
-
-input,
-textarea {
-	border: 1px solid black;
-}
-
-button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
-	cursor: pointer;
-}
-
-@media screen and (min-width:768px) {
-	:root {
-		font-size: 1.1rem;
-	}
 }

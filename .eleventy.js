@@ -1,8 +1,9 @@
-const { DateTime } = require("luxon");
-const CleanCSS = require("clean-css");
-const UglifyJS = require("uglify-es");
-const htmlmin = require("html-minifier");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const { DateTime } = require("luxon"),
+  CleanCSS = require("clean-css"),
+  UglifyJS = require("uglify-es"),
+  htmlmin = require("html-minifier"),
+  eleventyNavigationPlugin = require("@11ty/eleventy-navigation"),
+  pluginSass = require("eleventy-plugin-sass");
 
 module.exports = function(eleventyConfig) {
 
@@ -20,6 +21,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("machineDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
+
+  // // Process sass
+  // eleventyConfig.addPlugin(pluginSass, {
+  //   watch: ['assets/css/**/*.sass', '!node_modules/**']
+  // });
 
   // Minify CSS
   eleventyConfig.addFilter("cssmin", function(code) {
@@ -74,7 +80,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("_includes/assets/");
+  eleventyConfig.addPassthroughCopy("_includes/");
+  eleventyConfig.addPassthroughCopy("assets/css/*.css*");
+  eleventyConfig.addPassthroughCopy("assets/js/");
+  eleventyConfig.addPassthroughCopy("assets/imgs/");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
