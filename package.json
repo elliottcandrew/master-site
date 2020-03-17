@@ -3,14 +3,15 @@
   "version": "1.0.3",
   "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
-    "start": "concurrently \"npm run sass -- --watch\" \"npm run serve\"",
+    "11ty-sass": "concurrently -k -n \"sass,11ty\" -c \"magenta,blue\" \"npm run sass -- --watch\" \"npm run serve\" -p \"[{name}] {time}\" -t \"HH:mm:ss\"",
+    "start": "npm run bs & concurrently -k -n \"sass,11ty\" -c \"magenta,blue\" \"npm run sass -- --watch\" \"npm run watch\" -p \"[{name}] {time}\" -t \"HH:mm:ss\"",
     "build": "npm run sass && npm run gm && npx eleventy",
     "watch": "npx eleventy --watch --quiet",
     "serve": "npx eleventy --serve --quiet",
     "debug": "DEBUG=* npx eleventy",
-    "sass": "npx sass assets/css/master.sass assets/css/master.css --style=compressed --trace",
-    "bsprod": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
-    "gm": "node utils/js/gm.js"
+    "sass": "npx sass assets/css/master.sass assets/css/master.css --style=compressed",
+    "gm": "node utils/js/gm.js",
+    "bs": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode"    
   },
   "repository": {
     "type": "git",

@@ -22,11 +22,6 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
-  // // Process sass
-  // eleventyConfig.addPlugin(pluginSass, {
-  //   watch: ['assets/css/**/*.sass', '!node_modules/**']
-  // });
-
   // Minify CSS
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
@@ -81,7 +76,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/");
-  eleventyConfig.addPassthroughCopy("assets/css/*.css*");
+  eleventyConfig.addPassthroughCopy("assets/css/master.css");
   eleventyConfig.addPassthroughCopy("assets/js/");
   eleventyConfig.addPassthroughCopy("assets/imgs/");
 
