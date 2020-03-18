@@ -1,17 +1,20 @@
+html
+	display: grid
+	justify-items: center
+
 html,
 body 
 	padding: 0
 	margin: 0
 	font-family: monospace
-	background: blue
+	background: #f7f7f7
 
-body 
+body
 	display: grid
-	height: 100vh
+	grid-template-columns: 10em minmax(600px, 1000px) 10em
 	grid-template-rows: auto 1fr auto
-	margin: 1em
-
-.header, .footer, .main
+	grid-gap: 1em
+	height: 100vh
 	padding: 1em
 
 p,
@@ -34,4 +37,14 @@ pre
 	hyphens: none
 	padding: 1em
 	margin: .5em 0
+
+ul 
+	padding: 0
+	list-style: none
+
+ul :first-child 
+	margin-left: 0
+
+li a[href]:not(:hover) 
+	text-decoration: none
 

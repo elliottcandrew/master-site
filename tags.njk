@@ -14,14 +14,9 @@ renderData:
   title: "Tagged “{{ tag }}”"
 ---
 
-<small>Showing entries tagged as “{{ tag }}”</small>
-<br>
-<br>
-<br>
+<article>
+  <p>Showing entries tagged as “{{ tag }}”</p>
+</article>
 
 {% set postslist = collections[ tag ] %}
 {% include "components/postslist.njk" %}
-
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>

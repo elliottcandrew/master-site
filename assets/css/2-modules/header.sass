@@ -1,3 +1,16 @@
+header
+	display: grid
+	height: 8em
+	align-content: end
+	grid-column: 2
+	padding-bottom: 2em
+	border-bottom: 1px solid black
+	ul
+		margin: 0
+		list-style-type: none
+	li
+		display: inline
+	
 /* Header Logo (style as h2) */
 header > em 
 	display: block
@@ -7,19 +20,10 @@ header > em
 	font-style: normal
 
 /* Header Nav */
-header nav ul 
-	padding: 0
-	list-style: none
-
-header nav ul :first-child 
-	margin-left: 0
-
 header nav li 
 	display: inline-block
-	margin: 0 .5em
+	margin: 0 1em
 
-header nav li a[href]:not(:hover) 
-	text-decoration: none
 
 header nav li a[data-current="current item"] 
 	font-weight: 700
