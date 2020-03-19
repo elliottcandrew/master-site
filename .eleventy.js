@@ -57,7 +57,8 @@ module.exports = function(eleventyConfig) {
   });
 
   // A responsive image helper using Netlify Large Media - image transformation
-  eleventyConfig.addShortcode("netlify-image", require("./utils/js/netlify-image.js"));
+  eleventyConfig.addShortcode("resImg", require("./utils/js/resImg.js"));
+  eleventyConfig.addShortcode("resThumb", require("./utils/js/resThumb.js"));
 
   // only content in the `posts/` directory
   eleventyConfig.addCollection("logbook", function(collection) {

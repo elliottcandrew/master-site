@@ -2,7 +2,7 @@
 title: Google Streetview site analysis
 date: 2020-02-21T00:00:00.000Z
 summary: Analyzing the colour palette of cities from Streetview data
-thumb: /assets/imgs/san720.gif
+thumb: san720.gif
 tags:
   - streetview
   - tech

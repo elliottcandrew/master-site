@@ -2,7 +2,7 @@
 title: Google Streetview
 date: 2020-03-11T00:00:00.000Z
 summary: Reverse engineering google streetview to build 3d environments
-thumb: /assets/imgs/gsv6.png
+thumb: "gsv6.png"
 tags:
   - generative
   - tech
@@ -14,7 +14,7 @@ Part of [[Skylines III]](http://patriciogonzalezvivo.com/2014/skylines/skylines.
 
 <!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/89982874" width="1024" height="640" frameborder="0" allowfullscreen></iframe> -->
 
-{% netlify-image "gsv1.png", "Yummy cake" %}
+{% resImg "gsv1.png", "" %}
 
 ![](/assets/imgs/gsv1.png)
 

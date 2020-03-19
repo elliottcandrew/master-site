@@ -10,7 +10,8 @@
 			</div>
 			<a href="{{ post.url | url }}" class="cell" id="center">
 				{% if post.data.thumb %}
-					<img src="{{ post.data.thumb }}" alt="fake places">
+					{# shortcode for responsive images from netlify - links to resImg.js #}
+					{% resThumb post.data.thumb, "" %}
 				{% endif %}
 				<div id="wrapper">
 					<h4>
