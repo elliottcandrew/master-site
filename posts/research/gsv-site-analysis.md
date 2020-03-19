@@ -14,10 +14,10 @@ Tools used:
 [[istreetview]](https://istreetview.com/)
 [[colorgram.py]](https://github.com/obskyr/colorgram.py)
 
-![](/assets/imgs/ant720.gif)
-![](/assets/imgs/san720.gif)
-![](/assets/imgs/cph720.gif)
-![](/assets/imgs/ber720.gif)
+{% resImg "ant720.gif", "" %}
+{% resImg "san720.gif", "" %}
+{% resImg "cph720.gif", "" %}
+{% resImg "ber720.gif", "" %}
 
 # Object Detection
 
@@ -26,5 +26,5 @@ Tools used:
 
 I also ran tensorflow object detection on some of the images using the COCO pre-trained library. This needs some work as the network clearly struggled to identify many of the objects and people in the scene with high certainty, while evidently struggling with the 360deg pano images leading to mis-identify a building as a boat. 
 
-![](/assets/imgs/gsv-tf01.png)
-![](/assets/imgs/gsv-tf02.png)
+{% resImg "gsv-tf01.png", "" %}
+{% resImg "gsv-tf02.png", "" %}

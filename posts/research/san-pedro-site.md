@@ -9,5 +9,5 @@ tags:
   - antofagasta
   - atacama
 ---
-![](/assets/imgs/sanped-3dmap.jpg)
-![](/assets/imgs/sanped-2dmap.png)
+{% resImg "sanped-3dmap.jpg", "" %}
+{% resImg "sanped-2dmap.png", "" %}

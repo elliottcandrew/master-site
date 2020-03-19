@@ -15,16 +15,10 @@ Part of [[Skylines III]](http://patriciogonzalezvivo.com/2014/skylines/skylines.
 <!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/89982874" width="1024" height="640" frameborder="0" allowfullscreen></iframe> -->
 
 {% resImg "gsv1.png", "" %}
-
-![](/assets/imgs/gsv1.png)
-
-![](/assets/imgs/gsv2.png)
-
-![](/assets/imgs/gsv3.png)
-
-![](/assets/imgs/gsv4.png)
-
-![](/assets/imgs/gsv5.jfif)
+{% resImg "gsv2.png", "" %}
+{% resImg "gsv3.png", "" %}
+{% resImg "gsv4.png", "" %}
+{% resImg "gsv5.jfif", "" %}
 
 [[skylines III]](http://patriciogonzalezvivo.com/2014/skylines/skylines.php?v=03)
 [[openframeworks demo]](http://patriciogonzalezvivo.com/2014/pointcloudcity/wash-sq/)

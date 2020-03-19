@@ -9,4 +9,4 @@ tags:
   - antofagasta
   - atacama
 ---
-![](/assets/imgs/infographic.jpg)
+{% resImg "infographic.jpg", "" %}
