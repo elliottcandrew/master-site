@@ -12,7 +12,9 @@ tags:
 ---
 Part of [[Skylines III]](http://patriciogonzalezvivo.com/2014/skylines/skylines.php?v=03) Series of postcards revealing the invisible information of a city that is otherwise trapped inside corporate databases, freeing private information collected from public spaces.
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/89982874" width="1024" height="640" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/89982874" width="1024" height="640" frameborder="0" allowfullscreen></iframe> -->
+
+{% netlify-image "gsv1.png", "Yummy cake" %}
 
 ![](/assets/imgs/gsv1.png)
 

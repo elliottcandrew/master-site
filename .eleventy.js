@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+  // Remap post layout aliases - https://www.11ty.dev/docs/layouts/#layout-aliasing 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   // Date formatting (human readable)
@@ -54,6 +55,9 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
+
+  // A responsive image helper using Netlify Large Media - image transformation
+  eleventyConfig.addShortcode("netlify-image", require("./utils/js/netlify-image.js"));
 
   // only content in the `posts/` directory
   eleventyConfig.addCollection("logbook", function(collection) {

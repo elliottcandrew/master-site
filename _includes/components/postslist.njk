@@ -34,7 +34,7 @@
 						{%- if (tag != "post") and (tag != "logbook") and (tag != "research") -%}
 							{% set tagUrl %}/tags/{{ tag }}/{% endset %}
 						<li>
-							<a href="{{ tagUrl | url }}" rel="tag">[{{ tag }}]</a>
+							<a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>
 						</li>
 						{%- endif -%}
 						{% endfor %}
