@@ -2,7 +2,7 @@
 title: Google Streetview
 date: 2020-03-11T00:00:00.000Z
 summary: Reverse engineering google streetview to build 3d environments
-thumb: /static/img/gsv6.png
+thumb: /assets/imgs/gsv6.png
 tags:
   - generative
   - tech
@@ -14,15 +14,15 @@ Part of [[Skylines III]](http://patriciogonzalezvivo.com/2014/skylines/skylines.
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/89982874" width="1024" height="640" frameborder="0" allowfullscreen></iframe>
 
-![](/static/img/gsv1.png)
+![](/assets/imgs/gsv1.png)
 
-![](/static/img/gsv2.png)
+![](/assets/imgs/gsv2.png)
 
-![](/static/img/gsv3.png)
+![](/assets/imgs/gsv3.png)
 
-![](/static/img/gsv4.png)
+![](/assets/imgs/gsv4.png)
 
-![](/static/img/gsv5.jfif)
+![](/assets/imgs/gsv5.jfif)
 
 [[skylines III]](http://patriciogonzalezvivo.com/2014/skylines/skylines.php?v=03)
 [[openframeworks demo]](http://patriciogonzalezvivo.com/2014/pointcloudcity/wash-sq/)

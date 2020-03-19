@@ -8,49 +8,51 @@ if (window.netlifyIdentity) {
   });
 }
 
-// reframe.js - https://codepen.io/yowainwright/pen/amzAEo?editors=0010
-
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.reframe = factory());
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.noframe = factory());
 }(this, (function () { 'use strict';
 
-function Reframe(target, cName) {
+function noframe(target, container) {
   var frames = typeof target === 'string' ? document.querySelectorAll(target) : target;
-  if (!('length' in frames)) {
-    frames = [frames];
-  }
-  var classname = cName || 'js-reframe';
-  for (var i = 0; i < frames.length; i++) {
+  if (!('length' in frames)) frames = [frames];
+  for (var i = 0; i < frames.length; i += 1) {
     var frame = frames[i];
-    var hasClass = frame.className.split(' ').indexOf(classname);
-    if (hasClass >= 0) return false;
-    var div = document.createElement('div');
-    var height = frame.offsetHeight;
-    var width = frame.offsetWidth;
-    var padding = height / width * 100;
-    div.style.paddingTop = padding + '%';
-    frame.height = frame.width = '';
-    div.className += classname;
-    frame.parentNode.insertBefore(div, frame);
-    frame.parentNode.removeChild(frame);
-    div.appendChild(frame);
+    var isContainerElement = typeof container !== 'undefined' && document.querySelector(container);
+    var parent = isContainerElement ? document.querySelector(container) : frame.parentElement;
+    var h = frame.offsetHeight;
+    var w = frame.offsetWidth;
+    var styles = frame.style;
+    var maxW = w + 'px';
+    if (isContainerElement) {
+      maxW = window.getComputedStyle(parent, null).getPropertyValue('max-width');
+      styles.width = '100%';
+      styles.maxHeight = 'calc(' + maxW + ' * ' + h + ' / ' + w + ')';
+    } else {
+      var maxH = void 0;
+      styles.display = 'block';
+      styles.marginLeft = 'auto';
+      styles.marginRight = 'auto';
+      var fullW = maxW;
+      if (w > parent.offsetWidth) {
+        fullW = parent.offsetWidth;
+        maxH = fullW * h / w;
+      } else maxH = w * (h / w);
+      styles.maxHeight = maxH + 'px';
+      styles.width = fullW;
+    }
+    var cssHeight = 100 * h / w;
+    styles.height = cssHeight + 'vw';
+    styles.maxWidth = '100%';
   }
-  return this;
-}
-function reframe (target, cName) {
-  return new Reframe(target, cName);
 }
 
-if (window.$ || window.jQuery || window.Zepto) {
-  window.$.fn.reframe = function reframeFunc(cName) {
-    return new Reframe(this, cName);
-  };
-}
-
-return reframe;
+return noframe;
 
 })));
 
-reframe('iframe');
+noframe('iframe');
+
+document.getElementsByClassName("postslist").style.opacity = ".5";
+document.getElementById("left").className = "new";

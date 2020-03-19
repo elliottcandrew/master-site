@@ -11,4 +11,7 @@
     {% include "assets/js/inline.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
+  
+  {# link to script rather than inline - throws err #}
+  {# <script src="/assets/js/inline.js"></script> #}
 </head>
