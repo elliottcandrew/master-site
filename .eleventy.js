@@ -4,11 +4,15 @@ const { DateTime } = require("luxon"),
   htmlmin = require("html-minifier"),
   eleventyNavigationPlugin = require("@11ty/eleventy-navigation"),
   pluginSass = require("eleventy-plugin-sass");
+  syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  // Eleventy syntax highlighting https://www.11ty.dev/docs/plugins/syntaxhighlight/
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // Remap post layout aliases - https://www.11ty.dev/docs/layouts/#layout-aliasing 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");

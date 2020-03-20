@@ -23,7 +23,7 @@ Git lfs...
 
 ### Responsive images with Netlify large media, Git-lfs and Eleventy shortcodes to create picture tag
 
-```
+```js
 module.exports = (url, alt = "Missing alt text") => {
     return `<picture>
         <source srcset="/assets/imgs/${url}?nf_resize=fit&w=700" media="(min-width: 1200px)">
