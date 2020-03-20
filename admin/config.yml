@@ -5,13 +5,25 @@ backend:
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
-media_folder: "static/img" # Media files will be stored in the repo under images/uploads
+media_folder: "assets/imgs/**" # Media files will be stored in the repo under images/uploads
 
 collections:
-  # Our blog posts
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
-    folder: "posts" # The path to the folder where the documents are stored
+  # Research posts
+  - name: "research" # Used in routes, e.g., /admin/collections/blog
+    label: "Research Posts" # Used in the UI
+    folder: "posts/research" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Body", name: "body", widget: "markdown" }
+  # Logbook posts
+  - name: "logbook" # Used in routes, e.g., /admin/collections/blog
+    label: "Logbook Posts" # Used in the UI
+    folder: "posts/logbook" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
