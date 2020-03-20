@@ -2,12 +2,11 @@
 title: Website development
 date: 2020-03-15T00:00:00.000Z
 summary: Future reference for site builds
-# thumb: san720.gif
 tags:
-    - site
-    - development
-    - utilities
-    - process log
+  - site
+  - development
+  - utilities
+  - process log
 ---
 A rolling log of updates, changes and improvements made to this site as they happen.
 
@@ -36,6 +35,8 @@ module.exports = (url, alt = "Missing alt text") => {
 [source](https://example-nlm-picture.netlify.com/)
 [source](https://docs.netlify.com/large-media/transform-images/#smartcrop)
 
+### Known bugs
+    - Netlify LM transforms break gif animation
 
 ### To-do
     - thumb resImg.js
