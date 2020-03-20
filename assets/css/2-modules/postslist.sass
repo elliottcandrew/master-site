@@ -19,8 +19,9 @@ main > .card > *
 	margin-bottom: .5em
 
 .cell
-	padding-bottom: 1em
-	margin-bottom: 1em
+	// padding-bottom: 1em
+	// margin-bottom: 1em
+	padding: 1em 0
 	background-clip: content-box
 #left
 	text-align: right	
@@ -28,7 +29,16 @@ main > .card > *
 	display: grid
 	grid-gap: 1em
 	grid-template-columns: auto 1fr
-	border-bottom: 1px solid black
+	border-bottom: $border-thickness dotted black	
+	&:hover
+		background: #ececec
+		#wrapper
+			color: black
+
+// .postslist > :first-child
+// 	#center
+// 		border-top: $border-thickness dotted black
+
 
 .postslist li
 	margin-bottom: .5em
