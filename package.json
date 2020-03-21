@@ -11,7 +11,7 @@
     "debug": "DEBUG=* npx eleventy",
     "sass": "npx sass assets/css/master.sass assets/css/master.css --style=compressed",
     "gm": "node utils/js/gm.js",
-    "bs": "browser-sync start --server ./_site -w --no-open --no-notify"
+    "bs": "browser-sync start --port 3000 --server ./_site -w --no-open --no-notify"
   },
   "repository": {
     "type": "git",
