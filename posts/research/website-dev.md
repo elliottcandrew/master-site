@@ -15,11 +15,15 @@ This page will serve primarily as a reference for later builds.
 
 ### Git-lfs and Netlify Large Media
 
-Git lfs...
+[Git lfs](https://git-lfs.github.com/) in conjunction with [Netlify large media](https://docs.netlify.com/large-media/overview/) to serve responsive images for different device screen sizes.
 
 ### Reframe.js
 
+Add responsive behaviour to videos with the [reframe.js](https://dollarshaveclub.github.io/reframe.js/) iframe wrapper
+
 ### Eleventy with node build tools, Github and Netlify
+
+Using this [boiler plate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate) as a base
 
 ### Responsive images with Netlify large media, Git-lfs and Eleventy shortcodes to create picture tag
 
