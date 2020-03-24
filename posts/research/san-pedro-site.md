@@ -11,5 +11,5 @@ tags:
   - analysis
 ---
 {% resImg "sanped-worldmap.png", "" %}
-{% resImg "sanped-3dmap.jpg", "" %}
 {% resImg "sanped-2dmap.png", "" %}
+{% resImg "sanped-3dmap.jpg", "" %}
