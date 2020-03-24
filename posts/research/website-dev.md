@@ -2,15 +2,30 @@
 title: Website development
 date: 2020-03-15T00:00:00.000Z
 summary: Future reference for site builds
+thumb: web-dev-01.png
 tags:
-  - site
-  - development
+  - code
+  - dev
   - utilities
-  - process log
+  - process
+sources:
+  - [Git lfs, https://git-lfs.github.com/]
+  - [reframe.js, https://dollarshaveclub.github.io/reframe.js/]
+  - [Site Boiler Plate, https://github.com/danurbanowicz/eleventy-netlify-boilerplate]
+  - [Netlify Large Media, https://example-nlm-picture.netlify.com/]
+  - [Netlify Transform, https://docs.netlify.com/large-media/transform-images/#smartcrop]
+  - [Leaflet.js, https://leafletjs.com/]
+  - [D3 examples, https://observablehq.com/@d3]
+  - [D3.js, https://d3js.org/]
+  - [Voroni labels, https://observablehq.com/@d3/voronoi-labels]
+  - [Paper.js, http://paperjs.org/showcase/]
 ---
+
+{% resImg "web-dev-01.png", "" %}
+
 A rolling log of updates, changes and improvements made to this site as they happen.
 
-This page will serve primarily as a reference for later builds.
+This page will serve primarily as a proprietary reference for later builds.
 
 ### Git-lfs and Netlify Large Media
 
@@ -36,14 +51,18 @@ module.exports = (url, alt = "Missing alt text") => {
 };
 ```
 
-[source](https://example-nlm-picture.netlify.com/)
-[source](https://docs.netlify.com/large-media/transform-images/#smartcrop)
-
 ### Known bugs
-    - Netlify LM transforms break gif animation
+  - Netlify LM transforms break gif animation
 
 ### To-do
-    - thumb resImg.js
-    - mobile version
-    - responsive video iframes
-    - code block syntax highlighting plugin
+  - thumb resImg.js
+  - mobile version
+  - responsive video iframes
+  - code block syntax highlighting plugin
+
+### Tools
+  - [Leaflet.js]() - web maps
+  - [D3.js](https://d3js.org/) - web data visualisation
+  - [examples](https://observablehq.com/@d3)
+  - [Voroni labels](https://observablehq.com/@d3/voronoi-labels)
+  - [Paper.js](http://paperjs.org/showcase/) - programmable web vector graphics

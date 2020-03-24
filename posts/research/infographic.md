@@ -8,5 +8,7 @@ tags:
   - chile
   - antofagasta
   - atacama
+  - data
+  - analysis
 ---
 {% resImg "infographic.jpg", "" %}

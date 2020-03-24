@@ -4,7 +4,7 @@
 .card
 	display: grid
 	grid-template-columns: 10em 1fr 10em
-	grid-gap: 1em
+	grid-gap: 2em
 	height: auto
 	width: 100%
 	grid-column: 1/4
@@ -21,19 +21,25 @@ main > .card > *
 .cell
 	padding: 1em 0
 	background-clip: content-box
+	ul
+		list-style: none
+
+#left, #right
+	font-family: monospace
+	
 #left
-	text-align: right	
+	grid-column: 1
+	text-align: right
+
 #center
+	grid-column: 2
 	display: grid
-	grid-gap: 1em
+	grid-gap: 2em
 	grid-template-columns: auto 1fr
 	border-bottom: $border-thickness dotted black
 	&:hover
 		background: #ececec
 		color: black
 
-.postslist ul
-	margin: 0
-
-.postslist li
-	margin-bottom: .5em
+#right
+	grid-column: 3

@@ -3,23 +3,41 @@ layout: layouts/base.njk
 section: post
 ---
 
+<div class="cell" id="left">
+  <div class="spacer"></div>
+  {% if tags %}
+  <ul>
+  {% for tag in tags %}
+    {%- if tag != "post" -%}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <li><a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a></li>
+    {%- endif -%}
+  {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+
 <article>
-  <h1>{{ title }}</h1>
-  <p>
-    <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
-  </p>
+  <section>
+    <h1>{{ title }}</h1>
+    <p>
+      <time datetime="{{ date | machineDate }}">{{ date | defaultDate }}</time>
+    </p>
+  </section>
 
   {{ layoutContent | safe }}
 
-  {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
-
 </article>
+
+<div class="cell" id="right">
+  <div class="spacer"></div>
+  {% if sources %}
+  <ul>
+  {% for source in sources %}
+    {%- if tag != "post" -%}
+      <li><a href="{{ source[1] }}" rel="source">[{{ source[0] }}]</a></li>
+    {%- endif -%}
+  {% endfor %}
+  </ul>
+  {% endif %}
+</div>

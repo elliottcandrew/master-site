@@ -7,17 +7,25 @@ tags:
   - streetview
   - tech
   - environment
+  - analysis
+  - deep learning
+sources:
+  - [istreetview, https://istreetview.com/]
+  - [colorgram.py, https://github.com/obskyr/colorgram.py]
+  - [Tensorflow, https://github.com/tensorflow/tensorflow]
+  - [Coco API, https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd]
 ---
+{% resImg "ant720.gif", "" %}
+{% resImg "san720.gif", "" %}
+{% resImg "cph720.gif", "" %}
+{% resImg "ber720.gif", "" %}
+
 Google Streetview of my site in San Pedro de Atacama compared to other cities
 
 Tools used:
 [[istreetview]](https://istreetview.com/)
 [[colorgram.py]](https://github.com/obskyr/colorgram.py)
 
-{% resImg "ant720.gif", "" %}
-{% resImg "san720.gif", "" %}
-{% resImg "cph720.gif", "" %}
-{% resImg "ber720.gif", "" %}
 
 # Object Detection
 

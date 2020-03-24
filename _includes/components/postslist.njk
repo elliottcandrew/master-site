@@ -14,13 +14,13 @@
 					{% resThumb post.data.thumb, "" %}
 				{% endif %}
 				<div id="wrapper">
-					<h4>
+					<h3>
 						{% if post.data.title %}
 							{{ post.data.title }}
 						{% else %}
 							Untitled
 						{% endif %}
-					</h4>
+					</h3>
 					{% if post.data.summary %}
 						<p>
 							{{ post.data.summary }}
@@ -32,12 +32,14 @@
 				{% if post.data.tags %}
 					<ul>
 						{% for tag in post.data.tags %}
-						{%- if (tag != "post") and (tag != "logbook") and (tag != "research") -%}
-							{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-						<li>
-							<a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>
-						</li>
-						{%- endif -%}
+							{%- if (tag != "post") and (tag != "logbook") and (tag != "research") -%}
+							{# <p>/tags/{{ tag }}/</p>
+							<p>{{- page.url -}}</p> #}
+								{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+									<li>
+										<a href="{{ tagUrl | url }}" rel="tag" {% if tagUrl == page.url %} data-current="current item"{% endif %}>#{{ tag }}</a>
+									</li>
+							{%- endif -%}
 						{% endfor %}
 					</ul>
 				{% endif %}
