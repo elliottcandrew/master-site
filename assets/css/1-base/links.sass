@@ -17,9 +17,16 @@ a[rel="tag"]:visited
 	vertical-align: text-top
 	text-transform: lowercase
 	text-decoration: none
+a[rel="tag"]::before
+	content: "#"
 
 a[rel="tag"]:last-child 
 	margin-right: 0
+
+a[rel="source"]::before
+	content: "["
+a[rel="source"]::after
+	content: "]"
 
 a[data-current="current item"]
 	background-color: black

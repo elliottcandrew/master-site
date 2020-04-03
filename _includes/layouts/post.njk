@@ -4,40 +4,40 @@ section: post
 ---
 
 <div class="cell" id="left">
-  <div class="spacer"></div>
-  {% if tags %}
-  <ul>
-  {% for tag in tags %}
-    {%- if tag != "post" -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <li><a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a></li>
-    {%- endif -%}
-  {% endfor %}
-  </ul>
-  {% endif %}
+	<div class="spacer"></div>
+	{% if tags %}
+		<ul>
+		{% for tag in tags %}
+			{%- if tag != "post" -%}
+				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+				<li><a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a></li>
+			{%- endif -%}
+		{% endfor %}
+		</ul>
+	{% endif %}
 </div>
 
 <article>
-  <section>
-    <h1>{{ title }}</h1>
-    <p>
-      <time datetime="{{ date | machineDate }}">{{ date | defaultDate }}</time>
-    </p>
-  </section>
+	<section>
+		<h1>{{ title }}</h1>
+		<p>
+			<time datetime="{{ date | machineDate }}">{{ date | defaultDate }}</time>
+		</p>
+	</section>
 
-  {{ layoutContent | safe }}
+	{{ layoutContent | safe }}
 
 </article>
 
 <div class="cell" id="right">
-  <div class="spacer"></div>
-  {% if sources %}
-  <ul>
-  {% for source in sources %}
-    {%- if tag != "post" -%}
-      <li><a href="{{ source[1] }}" rel="source">[{{ source[0] }}]</a></li>
-    {%- endif -%}
-  {% endfor %}
-  </ul>
-  {% endif %}
+	<div class="spacer"></div>
+	{% if sources %}
+		<ul>
+		{% for source in sources %}
+			{%- if tag != "post" -%}
+				<li><a href="{{ source[1] }}" rel="source">{{ source[0] }}</a></li>
+			{%- endif -%}
+		{% endfor %}
+		</ul>
+	{% endif %}
 </div>
