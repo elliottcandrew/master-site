@@ -60,9 +60,19 @@ module.exports = (url, alt = "Missing alt text") => {
   - responsive video iframes
   - code block syntax highlighting plugin
 
-### Tools
+## Tools
+
+### Mapping
   - [Leaflet.js]() - web maps
-  - [D3.js](https://d3js.org/) - web data visualisation
-  - [examples](https://observablehq.com/@d3)
-  - [Voroni labels](https://observablehq.com/@d3/voronoi-labels)
-  - [Paper.js](http://paperjs.org/showcase/) - programmable web vector graphics
+  - [Mappbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/#scalecontrol)
+
+### Coding tools
+  - [Observable HQ](https://observablehq.com/) - notebook js playground
+  - [Gitbook](https://www.gitbook.com/) - documenting process
+  - [VSCode Tasks - running cli within workspace](https://code.visualstudio.com/docs/editor/tasks)
+  - [Wox Python Plugin](http://doc.wox.one/en/plugin/python_plugin.html)
+
+### Visualization
+  - [D3.js](https://d3js.org/) - data visualisation >[Voroni labels](https://observablehq.com/@d3/voronoi-labels)
+  - [Paper.js](http://paperjs.org/showcase/) - 2D canvas library
+  - [Pixi.js](https://pixijs.download/dev/docs/index.html) - WebGL 2D canvas library
