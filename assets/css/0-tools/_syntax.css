@@ -46,9 +46,21 @@ pre[class*="language-"] ::selection {
 
 pre[class*="language-"] {
 	overflow: auto;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
 	position: relative;
 	margin: 0.5em 0;
 	padding: 1.25em 1em;
+}
+
+/* Hide Scrollbar on code blocks */
+pre {
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;  /* IE 10+ */
+}
+pre::-webkit-scrollbar {
+	width: 0px;
+	background: transparent; /* Chrome/Safari/Webkit */
 }
 
 .language-css > code,
