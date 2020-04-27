@@ -1,0 +1,16 @@
+---
+title: open3D
+date: 2020-04-22
+summary: Testing functionality of the Open3D library to create and manipulate point clouds with depth images
+thumb: open3D.png
+tags:
+    - 3D
+    - utilities
+    - code
+    - analysis
+    - data
+    - generative
+    - tests
+sources:
+    - [PrimeSenseDefault Camera, https://github.com/intel-isl/Open3D/issues/752]
+---

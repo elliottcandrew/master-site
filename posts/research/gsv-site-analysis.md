@@ -14,6 +14,7 @@ sources:
   - [colorgram.py, https://github.com/obskyr/colorgram.py]
   - [Tensorflow, https://github.com/tensorflow/tensorflow]
   - [Coco API, https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd]
+  - [Streetview Coverage URL, https://www.youtube.com/watch?v=ZOAl6GUc6vc]
 ---
 {% resImg "ant720.gif", "" %}
 {% resImg "san720.gif", "" %}

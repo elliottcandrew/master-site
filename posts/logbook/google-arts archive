@@ -4,12 +4,12 @@ date: 2020-03-24
 summary: A procedurally generated novel based on a simple set of rules
 thumb: our-arrival-01.jpg
 tags:
-  - procedural
-  - generative
-  - writing
+	- procedural
+	- generative
+	- writing
 sources:
-    - [artist website, http://portfolio.decontextualize.com/]
-    - [book, http://s3.amazonaws.com/aparrish/our-arrival.pdf]
+		- [artist website, http://portfolio.decontextualize.com/]
+		- [book, http://s3.amazonaws.com/aparrish/our-arrival.pdf]
 ---
 ### Our Arrival is a procedurally generated novel by Allison Parrish that recounts the daily events of an expedition through fantastical places that do not exist.
 

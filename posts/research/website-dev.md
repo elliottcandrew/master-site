@@ -1,5 +1,5 @@
 ---
-title: Website development
+title: Website Development
 date: 2020-03-15T00:00:00.000Z
 summary: Future reference for site builds
 thumb: web-dev-01.png
@@ -59,6 +59,10 @@ module.exports = (url, alt = "Missing alt text") => {
   - mobile version
   - responsive video iframes
   - code block syntax highlighting plugin
+  - implement postcss - [article](https://medium.com/@im.simonecorsi/moving-from-sass-to-postcss-why-what-and-how-f68b1bc760dc), [sugarss](https://github.com/postcss/sugarss)
+
+### General tips
+  - [Single direction margins](https://csswizardry.com/2012/06/single-direction-margin-declarations/) (best practice)
 
 ## Tools
 
@@ -72,7 +76,21 @@ module.exports = (url, alt = "Missing alt text") => {
   - [VSCode Tasks - running cli within workspace](https://code.visualstudio.com/docs/editor/tasks)
   - [Wox Python Plugin](http://doc.wox.one/en/plugin/python_plugin.html)
 
+### Image transformations
+  - Remove bg white to transparent: ```convert in.format -fuzz 10% -transparent White out.format```
+
 ### Visualization
   - [D3.js](https://d3js.org/) - data visualisation >[Voroni labels](https://observablehq.com/@d3/voronoi-labels)
   - [Paper.js](http://paperjs.org/showcase/) - 2D canvas library
   - [Pixi.js](https://pixijs.download/dev/docs/index.html) - WebGL 2D canvas library
+
+### Baseline typography
+
+Tools for review:
+  - [Sassline](https://medium.com/@jakegiltsoff/sassline-v2-0-e424b2881e7e) (sass mixins)
+  - [Gutenberg](http://matejlatin.github.io/Gutenberg/) - [article](https://betterwebtype.com/articles/2018/10/15/rhythm-in-web-typography/) (sass mixins)
+  - [Plumber](https://jamonserrano.github.io/plumber-sass/) (postcss)
+  - [postcss-baseline-vertical-rhythm](https://www.npmjs.com/package/postcss-baseline-vertical-rhythm) - experimental, looks like the simplest setup and most dynamic
+  - [Font-Inspector](https://opentype.js.org/font-inspector.html) - js lib for font metrics
+  - [Typographist](https://www.npmjs.com/package/@typographist/postcss) (postcss) - modern evolution of sassline and gutenberg, integrated with css grids, possibly complicated setup
+  - [typography.js](https://github.com/KyleAMathews/typography.js) ([postcss](https://github.com/BarryThePenguin/postcss-typography)) - theming, baseline aligned?

@@ -1,0 +1,16 @@
+---
+title: collate-test
+date: 2020-04-05
+summary: testing collating multiple modules into one post
+thumb: collate-test.jpg
+tags:
+	- one
+	- two
+	- three
+	- four
+	- five
+sources:
+	- [one]()
+	- [two]()
+	- [three]()
+---

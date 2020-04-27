@@ -4,12 +4,12 @@ date: 2020-03-11T00:00:00.000Z
 summary: "Terram in Aspectu: Phantom islands generated from satellite imagery"
 thumb: SCR-200308_131018.png
 tags:
-  - generative
-  - tech
-  - environment
-  - vr
+    - generative
+    - tech
+    - environment
+    - vr
 sources:
-  - [artist website, https://www.lilianafarber.com/terram-in-aspectu]
+    - [artist website, https://www.lilianafarber.com/terram-in-aspectu]
 ---
 {% resImg "SCR-200308_130816.png" %}
 
