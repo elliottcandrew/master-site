@@ -3,7 +3,7 @@ const { DateTime } = require("luxon"),
   UglifyJS = require("uglify-es"),
   htmlmin = require("html-minifier"),
   eleventyNavigationPlugin = require("@11ty/eleventy-navigation"),
-  pluginSass = require("eleventy-plugin-sass");
+  pluginSass = require("eleventy-plugin-sass"); // remove
   syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {

@@ -7,4 +7,6 @@ permalink: /research/index.html
 {{ layoutContent | safe }}
 
 {% set postslist = collections.research %}
-{% include "components/postslist.njk" %}
+<div class="postslist">
+    {% include "components/postslist.njk" %}
+</div>

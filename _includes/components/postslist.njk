@@ -1,49 +1,51 @@
-<div class="postslist">
-	{% for post in postslist | reverse %}
-		<div class="card" {% if post.url == url %} data-current="current item"{% endif %}>
-			<div class="cell" id="left">
-				<h4>
-					<time datetime="{{ post.date | machineDate }}">
-						{{ post.date | defaultDate }}
-					</time>
-				</h4>
-			</div>
-			<a href="{{ post.url | url }}" class="cell" id="center">
-				{% if post.data.thumb %}
-					{# shortcode for responsive images from netlify - links to resImg.js #}
-					{% resThumb post.data.thumb, "" %}
-				{% endif %}
-				<div id="wrapper">
-					<h3>
-						{% if post.data.title %}
-							{{ post.data.title }}
-						{% else %}
-							Untitled
-						{% endif %}
-					</h3>
-					{% if post.data.summary %}
-						<p>
-							{{ post.data.summary }}
-						</p>
-					{% endif %}
-				</div>
-			</a>
-			<div class="cell" id="right">
-				{% if post.data.tags %}
-					<ul>
-						{% for tag in post.data.tags %}
-							{%- if (tag != "post") and (tag != "logbook") and (tag != "research") -%}
-							{# <p>/tags/{{ tag }}/</p>
-							<p>{{- page.url -}}</p> #}
-								{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-									<li>
-										<a href="{{ tagUrl | url }}" rel="tag" {% if tagUrl == page.url %} data-current="current item"{% endif %}>#{{ tag }}</a>
-									</li>
-							{%- endif -%}
-						{% endfor %}
-					</ul>
-				{% endif %}
-			</div>
+{% for post in postslist | reverse %}
+	<div class="card" {% if post.url == url %} data-current="current item"{% endif %}>
+		<div class="cell" id="left">
+			<h4>
+				<time datetime="{{ post.date | machineDate }}">
+					{{ post.date | defaultDate }}
+				</time>
+			</h4>
 		</div>
-	{% endfor %}
-</div>
+		<a href="{{ post.url | url }}" class="cell" id="center">
+			{% if post.data.thumb %}
+				{# shortcode for responsive images from netlify - links to resImg.js #}
+				{% resThumb post.data.thumb, "" %}
+			{% endif %}
+			<div id="wrapper">
+				<h3>
+					{% if post.data.title %}
+						{{ post.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</h3>
+				{% if post.data.summary %}
+					<p>
+						{{ post.data.summary }}
+					</p>
+				{% endif %}
+			</div>
+		</a>
+		<div class="cell" id="right">
+			{% if post.data.tags %}
+				<ul>
+					{% for tag in post.data.tags %}
+						{%- if (tag != "post") and (tag != "logbook") and (tag != "research") -%}
+							{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+								<li>
+									{# set curent tag item with url redirecting back to main page #}
+									{% if tagUrl == page.url %}
+										<a href="{{ "/" | url }}" rel="tag" data-current="current item">{{ tag }}</a>
+									{% else %}
+										{# normal tag link #}
+										<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+									{% endif %}
+								</li>
+						{%- endif -%}
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+	</div>
+{% endfor %}
