@@ -3,7 +3,9 @@
   <ul>
   {%- for entry in navPages %}
     <li>
-      <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
+      <h4>
+      <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}><h4>{{ entry.title }}</h4></a>
+      </h4>
     </li>
   {%- endfor %}
   </ul>

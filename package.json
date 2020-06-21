@@ -33,6 +33,7 @@
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.1.0",
     "eleventy-plugin-sass": "^1.0.0",
+    "fast-glob": "^3.2.2",
     "fs-extra": "^8.1.0",
     "gm": "^1.23.1",
     "luxon": "^1.21.3",

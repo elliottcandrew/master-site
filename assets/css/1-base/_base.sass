@@ -1,36 +1,29 @@
-html
-	display: grid
-	justify-items: center
+html	
+	// baseline
+	margin: 2*$g-box 0
+	padding: 0
 
-html,
-body 
+html, body 
 	padding: 0
 	margin: 0
 	background: $bg-col
 		
 
 body
+	margin: 0 $g-box
 	display: grid
-	grid-template-columns: 10em minmax(600px, 1000px) 10em
+	grid-template-columns: 1fr $col-w 1fr
 	grid-template-rows: auto 1fr auto
-	grid-column-gap: 2em
-	height: 100vh
-	padding: 1em
+	grid-column-gap: 2*$g-box
 
-p,
-pre,
-code 
-	line-height: 1.5
+// p,
+// pre,
+// code 
+// 	line-height: 1.5
 
-ul 
+ul
+	// list-style-type: none
+
+ul, ol, li
 	margin: 0
 	padding: 0
-
-ul :first-child 
-	margin-left: 0
-li
-	margin-bottom: .5em
-	
-li a[href]:not(:hover) 
-	text-decoration: none
-

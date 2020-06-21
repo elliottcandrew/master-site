@@ -5,6 +5,11 @@ const { DateTime } = require("luxon"),
   eleventyNavigationPlugin = require("@11ty/eleventy-navigation"),
   pluginSass = require("eleventy-plugin-sass"); // remove
   syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+  
+  // for archive images
+  fg = require("fast-glob")
+  archiveThumbs = fg.sync("assets/imgs/ucn-museum-archive/thumbs/*")
+  archiveOriginals = fg.sync("assets/imgs/ucn-museum-archive/originals/*")
 
 module.exports = function(eleventyConfig) {
 
@@ -75,6 +80,14 @@ module.exports = function(eleventyConfig) {
       return item.inputPath.match(/^\.\/posts\/research\//) !== null;
     });
   });
+  
+  // for archive images
+  eleventyConfig.addCollection("archiveThumb", function(collection) {
+    return archiveThumbs
+  });
+  eleventyConfig.addCollection("archiveOriginal", function(collection) {
+    return archiveOriginals
+  });
 
   // Universal slug filter strips unsafe chars from URLs
   eleventyConfig.addFilter("slugify", function(str) {
@@ -93,6 +106,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/css/master.css");
   eleventyConfig.addPassthroughCopy("assets/js/");
   eleventyConfig.addPassthroughCopy("assets/imgs/");
+  eleventyConfig.addPassthroughCopy("assets/fonts/");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");

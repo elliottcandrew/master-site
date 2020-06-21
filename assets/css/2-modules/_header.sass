@@ -1,25 +1,17 @@
 header
 	display: grid
-	height: 8em
+	// height: 8em
 	align-content: end
 	grid-column: 2
-	padding-bottom: 2em
+	margin-top: 2*$g-box
+	// margin-bottom: 2*$g-box
 	border-bottom: $border-thickness dotted black
-	ul
-		margin: 0
-		list-style-type: none
-	li
-		display: inline
-	
-/* Header Logo (style as h2) */
-header > em 
-	display: block
-	font-size: 2.4em
-	margin: .67em 0
-	font-weight: bold
-	font-style: normal
+	// h1
+	// 	color: $bg-col
+	// 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+	// 	letter-spacing: .22rem
 
 /* Header Nav */
 header nav li 
 	display: inline-block
-	margin: 0 1em
+	margin-right: $g-box

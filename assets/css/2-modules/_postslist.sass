@@ -3,14 +3,13 @@
 
 .card
 	display: grid
-	grid-template-columns: 10em 1fr 10em
-	grid-gap: 2em
+	grid-template-columns: 1fr $col-w 1fr
+	grid-gap: 2*$g-box
 	height: auto
 	width: 100%
 	grid-column: 1/4
 	p, h1, h2, h3, h4
 		margin-top: 0 /* remove top margin on all main p tags */
-		margin-bottom: 1em
 	img
 		max-width: 200px
   
@@ -26,6 +25,8 @@ main > .card > *
 
 #left, #right
 	font-family: monospace
+	font-weight: bold
+	letter-spacing: 0.05rem
 	
 #left
 	grid-column: 1
@@ -40,6 +41,10 @@ main > .card > *
 	&:hover
 		background: #ececec
 		color: black
+	// capitalize 
+	h2
+		text-transform: capitalize
 
 #right
 	grid-column: 3
+	// text-align: right

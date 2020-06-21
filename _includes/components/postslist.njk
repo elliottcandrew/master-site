@@ -13,13 +13,13 @@
 				{% resThumb post.data.thumb, "" %}
 			{% endif %}
 			<div id="wrapper">
-				<h3>
+				<h2>
 					{% if post.data.title %}
 						{{ post.data.title }}
 					{% else %}
 						Untitled
 					{% endif %}
-				</h3>
+				</h2>
 				{% if post.data.summary %}
 					<p>
 						{{ post.data.summary }}
@@ -36,7 +36,7 @@
 								<li>
 									{# set curent tag item with url redirecting back to main page #}
 									{% if tagUrl == page.url %}
-										<a href="{{ "/" | url }}" rel="tag" data-current="current item">{{ tag }}</a>
+										<a href="{{ "/research" | url }}" rel="tag" data-current="current item">{{ tag }}</a>
 									{% else %}
 										{# normal tag link #}
 										<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>

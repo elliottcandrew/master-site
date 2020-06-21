@@ -1,15 +1,11 @@
 a[href],
 a[href]:visited 
 	color: var(--black)
-
-a[href]:hover
-	text-decoration: none
-	background-color: black
-	color: white
-
-a[href]:not(:hover) 
 	text-decoration: none
 
+a[href]:hover, a[href]:hover *
+	color: magenta !important
+	
 /* Post Tags */
 a[rel="tag"],
 a[rel="tag"]:visited 
@@ -29,5 +25,11 @@ a[rel="source"]::after
 	content: "]"
 
 a[data-current="current item"]
-	background-color: black
-	color: white !important
+	text-decoration: underline
+	color: magenta !important
+
+// links in type
+
+// TODO: improve with selectors above at some point, may require a markdown-it plugin or shortcode
+article a
+	text-decoration: underline !important
