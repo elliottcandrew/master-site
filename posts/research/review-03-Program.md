@@ -3,12 +3,7 @@ title: Review 03 - Program
 date: 2020-03-24
 thumb: review-03-thumb2.png
 tags:
-  - review 03
-  - infrastructure
-  - chile
-  - antofagasta
-  - atacama
-  - analysis
+  - review
 ---
 
 ## Review Pre-requisites

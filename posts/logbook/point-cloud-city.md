@@ -4,7 +4,7 @@ date: 2020-03-11T00:00:00.000Z
 summary: Reverse engineering google streetview to build 3d environments
 thumb: "gsv6.png"
 tags:
-  - data source
+  - data
   - analysis
   - tech
   - streetview
@@ -26,3 +26,6 @@ Part of [[Skylines III]](http://patriciogonzalezvivo.com/2014/skylines/skylines.
 {% resImg "gsv3.png", "" %}
 {% resImg "gsv4.png", "" %}
 {% resImg "gsv5.jfif", "" %}
+
+Related links
+- [Callum Prentice, Street Cloud Simple](https://callumprentice.github.io/apps/street_cloud_simple/index.html?&lat=37.800285984407&lng=-122.4014285614015)

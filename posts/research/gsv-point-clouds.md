@@ -1,5 +1,5 @@
 ---
-title: Google Streetview Point Clouds
+title: Extracting 3-Dimensional Data from Google Streetview
 date: 2020-04-15
 summary: 
 thumb: gsv-open3d-thumb.png
@@ -12,8 +12,6 @@ tags:
 sources:
     - 
 ---
-
-# Extracting the depth map from Google Streetview
 
 I used this great little python utility, [gsv_depth_scraper](https://github.com/ksteinfe/gsv_depth_scraper) by [Kyle Steinfeld](https://twitter.com/ksteinfe/) to fetch panorama tiles from Streetview, assemble them into seamless 360 images and then extract the hidden xml depth data from the XML to create depth images. This tool is a non-official use of the Google Streetview Static API.
 

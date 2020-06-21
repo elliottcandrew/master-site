@@ -84,6 +84,10 @@ module.exports = (url, alt = "Missing alt text") => {
   - [Paper.js](http://paperjs.org/showcase/) - 2D canvas library
   - [Pixi.js](https://pixijs.download/dev/docs/index.html) - WebGL 2D canvas library
 
+### Point Clouds
+  - Point Cloud Visualizer, Blender Plugin - [video](https://www.youtube.com/watch?v=eXct_7k779Q), [github](https://www.youtube.com/redirect?q=https%3A%2F%2Fgithub.com%2Fuhlik%2Fbpy%23point-cloud-visualizer-for-blender-280&redir_token=sbAkwNzM1ef6RP0BuGxr39HBSVt8MTU4ODI0NTM2OUAxNTg4MTU4OTY5&event=video_description&v=eXct_7k779Q)
+  - [WebGL Point clouds](http://potree.org/)
+
 ### Baseline typography
 
 Tools for review:

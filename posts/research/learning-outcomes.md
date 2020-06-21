@@ -1,7 +1,7 @@
 ---
 title: Learning Outcomes
 date: 2020-04-23
-summary: Critical responses to the learning outcomes requires as part of the AEE Master Program
+summary: Critical responses to the learning outcomes required as part of the AEE Master Program
 thumb: review-03-thumb2.png
 tags:
 sources:
