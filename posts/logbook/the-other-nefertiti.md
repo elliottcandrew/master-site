@@ -2,7 +2,7 @@
 title: The Other Nefertiti
 date: 2020-06-12
 summary: Swiping a Priceless Antiquity with a Scanner and a 3-D Printer
-thumb: nefertiti-bust.png
+thumb: nefertiti-bust-01.png
 tags:
     - data
     - heritage
@@ -15,7 +15,7 @@ sources:
     - [Jan Nikolai Nelles, http://oszilat.com/]
 ---
 
-{% resImg "nefertiti-bust-01.png", "3D scan of nefertiti bust" %}
+<!-- {% resImg "nefertiti-bust-01.png", "3D scan of nefertiti bust" %} -->
 {% resImg "nefertiti-bust-02.png", "3D scan of nefertiti bust" %}
 
 [Nefertiti Freedom of Information Act request, Cosmo Wenman](https://cosmowenman.com/nefertiti-3d-scan-foia-project/)

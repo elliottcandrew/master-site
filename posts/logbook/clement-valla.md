@@ -2,7 +2,7 @@
 title: Clement Valla
 date: 2020-06-15
 summary: Artworks that bridge the gap between virtual and physical
-thumb: clement-valla-01.png
+thumb: clement-valla-tire-01.png
 tags:
     - tech
     - generative
