@@ -36,7 +36,7 @@
     "fast-glob": "^3.2.2",
     "fs-extra": "^8.1.0",
     "gm": "^1.23.1",
-    "luxon": "^1.21.3",
+    "luxon": "^2.5.2",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5",
     "markdown-it-emoji": "^1.4.0",
